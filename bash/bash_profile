@@ -5,3 +5,6 @@ alias ber="bundle exec rake"
 
 # git
 alias gcm="git commit -m"
+alias gp="git push"
+alias gpr="git pull --rebase"
+alias gap="git add -p"
