@@ -1,3 +1,7 @@
 # My Alias'
+# Ruby
 alias be="bundle exec"
 alias ber="bundle exec rake"
+
+# git
+alias gcm="git commit -m"
