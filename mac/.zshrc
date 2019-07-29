@@ -7,6 +7,18 @@
 # export NVM_DIR="$HOME/.nvm"
 # . "/usr/local/opt/nvm/nvm.sh"
 
+# rbenv
+eval "$(rbenv init -)"
+
+# ssh-agent persist through terminals (not reboots)
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
+
+# git and gpg wont play nice unless I add the below line.
+export GPG_TTY=$(tty)
+
 # ssh-agent
 if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval `ssh-agent -s`
@@ -31,8 +43,4 @@ alias gcs="git commit -S -m"
 # Helper Functions
 add-my-keys () {
         ssh-add -K ~/.ssh/id_rsa
-        ssh-add -K ~/.ssh/identity-production-1-us-east-1.pem
-        ssh-add -K ~/.ssh/identity-staging-2-ap-southeast-2.pem
-        ssh-add -K ~/.ssh/identity-production-1-us-west-1.pem
-        ssh-add -K ~/.ssh/identity-production-20180124-us-east-1.pem
 }
