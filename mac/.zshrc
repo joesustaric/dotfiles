@@ -19,12 +19,6 @@ fi
 # git and gpg wont play nice unless I add the below line.
 export GPG_TTY=$(tty)
 
-# ssh-agent
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-  eval `ssh-agent -s`
-  ssh-add
-fi
-
 # My Alias'
 # Ruby
 alias be="bundle exec"
