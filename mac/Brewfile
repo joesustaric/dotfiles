@@ -1,0 +1,20 @@
+# 'brew tap'
+tap "homebrew/cask"
+
+# set arguments for all 'brew install --cask' commands
+cask_args appdir: "~/Applications"
+
+cask "alfred"
+cask "authy"
+cask "dropbox"
+cask "github"  # the desktop app
+cask "gpg-suite"
+cask "keybase"
+cask "spectacle"
+cask "spotify"
+cask "visual-studio-code"
+
+brew "git"
+brew "go"
+brew "tmux"
+brew "reattach-to-user-namespace"
