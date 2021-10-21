@@ -18,3 +18,4 @@ brew "git"
 brew "go"
 brew "tmux"
 brew "reattach-to-user-namespace"
+ 
