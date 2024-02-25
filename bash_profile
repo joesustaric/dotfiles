@@ -12,3 +12,5 @@ alias gchb="git checkout -b"
 alias gbrr="git branch -r"
 alias gbrl="git branch -l"
 alias gcs="git commit -S -m"
+
+# add stuff
